@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <title>Jelly Slider Animation</title>
+    <style>
+      html, body { margin: 0; min-height: 100%; background: #111; }
+      body { min-height: 100vh; }
+      #root { min-height: 100vh; }
+      .startup-message { box-sizing: border-box; padding: 32px 20px; color: #fff; font: 16px/1.5 system-ui, sans-serif; text-align: center; }
+      .startup-message strong { color: #ffb357; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><div class="startup-message"><strong>Jelly Slider</strong><p>Loading animation…</p><p>If this message stays here, the app script did not start.</p></div></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
